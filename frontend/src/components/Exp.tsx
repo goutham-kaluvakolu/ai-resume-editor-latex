@@ -3,7 +3,6 @@ import { expArray } from '../config';
 import { useRecoilState, useSetRecoilState } from 'recoil';
 import { experienceState, experienceLatexState } from '../atom';
 import ThemeAwareInput from './ThemeAwareInput';
-import ThemeAwareTextarea from './ThemeAwareTextarea';
 
 const Exp = () => {
     const setExperienceAtom = useSetRecoilState(experienceLatexState);

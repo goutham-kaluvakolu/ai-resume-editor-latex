@@ -190,7 +190,7 @@ export const techObject = {
 // API Configuration for different environments
 const API_CONFIG = {
   development: 'http://localhost:5000',
-  production: import.meta.env.VITE_API_URL || 'https://your-backend-url.com'
+  production: import.meta.env.VITE_API_URL || 'https://ai-resume-editor-backend.onrender.com'
 };
 
 export const API_BASE_URL = API_CONFIG[import.meta.env.MODE as keyof typeof API_CONFIG] || API_CONFIG.development;
