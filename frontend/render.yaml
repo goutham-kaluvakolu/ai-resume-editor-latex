@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ai-resume-editor-frontend
+    env: static
+    plan: free
+    rootDir: .
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://ai-resume-editor-backend.onrender.com
+    autoDeploy: true
+    branch: main 
